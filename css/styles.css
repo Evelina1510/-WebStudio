@@ -1,0 +1,81 @@
+:root {
+    --bg: #2F303A;
+    --text-email:#2196F3;
+    --text-number: #757575;
+    --text-address:#ffffff;
+    --text-logo: #000000;
+}
+
+  .logo {
+    color: black;
+    font-size: 26px;
+  } 
+  .studio {
+    color: #000000;
+     }
+  .portfolio {
+    color: #2196F3;
+  }
+  .contact {
+    color: #000000;
+  }
+  .email {
+    color: #2196F3;
+  }
+  .number {
+    color: #757575;
+  }
+  .hero {
+    background-color: #2F303A;
+  }
+  h1 {
+    font-size: 44px;
+    color: #ffffff;
+    text-align: center;
+  }
+  button {
+     background-color: #2196F3;
+     color: #ffffff;
+     font-size: 16px;
+     font-weight: 700;
+     line-height: 30px;
+  }
+  h3 {
+    color: #212121;
+    font-size: 14px;
+ }
+ p {
+    color: #757575;
+    font-size: 14px;
+ }
+ h2 {
+    color: #212121;
+    text-align: center;
+ }
+ .team {
+    background-color: #F5F4FA;
+ }
+ .team h3 {
+    font-size: 16px;
+    color: #212121;
+ }
+ footer {
+    background-color: #2F303A;
+    }
+    address {color: #ffffff;
+     }
+     .email {
+        color: #ffffff;
+     }
+     .number{
+        color: #ffffff;
+     }
+     .logo-footer{
+        color: #ffffff;
+     }
+     
+    
+     
+     
+
+   
