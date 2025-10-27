@@ -8,5 +8,42 @@
     --bg-footer:#2F303A;
     --text-footer:#FFFFFF99;
  }
-
- 
+ body {
+     font-family: "Roboto", sans-serif;
+ }
+ .header-logo {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+ }
+.header-link {
+      text-decoration: none;
+      font-size: 14px;
+}
+.footer-logo {
+     font-family: "Raleway", sans-serif;
+     text-decoration: none;
+}
+.footer-link {
+    text-decoration: none;
+}
+.hero-title {
+    line-height: 1.4;
+}
+.hero-btn {
+    line-height: 1.88;
+}
+.details-text {
+    line-height: 1.7;
+}
+.footer-item {
+    line-height: 1.7;
+}
+.portfolio-btn {
+    line-height: 1.6;
+}
+.portfolio-title {
+    line-height: 2;
+}
+.portfolio-category {
+    line-height: 1.88;
+}
