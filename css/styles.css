@@ -1,12 +1,13 @@
 :root {
-    --bg-header:#ffffff;
+    --bg-header--text:#ffffff;
     --text-hover-logo: #2196F3;
     --text-main:#212121;
     --text-p:#757575;
     --bg-hero:#2F303A;
     --team-bg:#F5F4FA;
     --bg-footer:#2F303A;
-    --text-footer:#FFFFFF99;
+    --text-footer:#FFFFFF;
+    --btn-bg: #2196F3;
  }
  body {
      font-family: "Roboto", sans-serif;
@@ -24,7 +25,7 @@
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 0.28px;
-
+      color: var(--text-main);
 }
 .footer-logo {
      font-family: "Raleway", sans-serif;
@@ -32,9 +33,14 @@
      font-weight: 700;
      font-size: 26px;
      letter-spacing: 0.8px;
+     color: var(--text-hover-logo);
 }
 .footer-link {
     text-decoration: none;
+     color: var(--text-footer);
+}
+.hero {
+    background-color: var(--bg-hero);
 }
 .hero-title {
     line-height: 1.4;
@@ -43,73 +49,96 @@
     letter-spacing: 2.64px;
    text-align: center;
     text-transform: uppercase;
+    color: var(--bg-header--text)
 }
-.hero-btn {
+button.hero-btn {
     line-height: 1.88;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.96px;
-   text-align: center;
+    text-align: center ;
     text-transform: uppercase;
+    background-color:var(--btn-bg);
+    color: var(--bg-header--text);
+    
 }
 .details-subtitle {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    color: var(--text-main);
 }
 .details-text {
     line-height: 1.7;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.42px;
+    color: var(--text-p);
 }
 .srv-subtitle {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 1.08px;
    text-align: center;
+   color:var(--text-main)
+}
+.team {
+    background-color: var(--team-bg)
 }
 .team-title {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 1.08px;
     text-align: center;
+    color: var(--text-main);
 }
 .team-name {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.48px;
     text-align: center;
+    color: var(--text-main);
 }
 .team-role {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.48px;
    text-align: center;
+   color: var(--text-p);
+}
+
+.footer {
+    background-color: var(--bg-footer);
 }
 .footer-item { 
     line-height: 1.7;
     font-weight: 400;
     font-size: 14px;
-    letter-spacing: 0.42px; 
+    letter-spacing: 0.42px;
+    color: var(--text-footer)
 }
+
 .portfolio-btn {
     line-height: 1.6;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.48px;
    text-align: center;
+   background-color: var(--team-bg);
+   color: var(--text-main)
 }
 .portfolio-title {
     line-height: 2;
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 1.08px;
+    color: var(--text-main);
 }
 .portfolio-category {
     line-height: 1.88;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.48px;
+    color: var(--text-p);
 }
