@@ -9,9 +9,15 @@
     --text-footer:#FFFFFF;
     --btn-bg: #2196F3;
  }
+ .container {
+    width: 1615px;
+    padding: 0 15px;
+    margin: 0 auto;
+ }
  body {
      font-family: "Roboto", sans-serif;
  }
+
  .header-logo {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
@@ -19,6 +25,8 @@
      font-size: 26px;
      letter-spacing: 0.8px;
      color: var(--text-hover-logo);
+      padding-top: 25px;
+     padding-bottom: 25px;
  }
 .header-link {
       text-decoration: none;
@@ -41,6 +49,8 @@
 }
 .hero {
     background-color: var(--bg-hero);
+    padding-top: 200px;
+    padding-bottom: 280px;
 }
 .hero-title {
     line-height: 1.4;
@@ -62,12 +72,16 @@ button.hero-btn {
     color: var(--bg-header--text);
     
 }
+.details {
+    padding-top: 94px;
+}
 .details-subtitle {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     color: var(--text-main);
+    
 }
 .details-text {
     line-height: 1.7;
@@ -75,6 +89,10 @@ button.hero-btn {
     font-size: 14px;
     letter-spacing: 0.42px;
     color: var(--text-p);
+}
+.srv {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .srv-subtitle {
     font-weight: 700;
@@ -84,7 +102,9 @@ button.hero-btn {
    color:var(--text-main)
 }
 .team {
-    background-color: var(--team-bg)
+    background-color: var(--team-bg) ;
+    padding-top: 186px;
+    padding-bottom: 94px;
 }
 .team-title {
     font-weight: 700;
@@ -110,6 +130,8 @@ button.hero-btn {
 
 .footer {
     background-color: var(--bg-footer);
+    padding-top: 60px;
+    padding-bottom: 161px;
 }
 .footer-item { 
     line-height: 1.7;
