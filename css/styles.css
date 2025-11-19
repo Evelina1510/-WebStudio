@@ -20,6 +20,62 @@
 .logo-blue {
     color: var(--text-hover-logo)
 }
+.logo-white {
+    color: var(--text-footer);
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
+}
+
+.hero-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.details-subtitle {
+    margin-bottom: 10px;
+}
+
+.srv-list {
+    display: flex;
+    justify-content: center ;
+    gap: 30px;
+}
+.srv-subtitle {
+    margin-bottom: 50px;
+}
+
+.team-title {
+    margin-bottom: 50px;
+}
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 94px;
+}
+.team-img {
+    width: 270px;
+    height: 260px;
+}
+
  .header-logo {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
@@ -61,7 +117,8 @@
     letter-spacing: 2.64px;
    text-align: center;
     text-transform: uppercase;
-    color: var(--bg-header--text)
+    color: var(--bg-header--text) ;
+    margin-bottom: 30px;
 }
 button.hero-btn {
     line-height: 1.88;
