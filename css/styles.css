@@ -10,22 +10,24 @@
     --btn-bg: #2196F3;
  }
  .container {
-    width: 1615px;
+    width: 1185px;
     padding: 0 15px;
     margin: 0 auto;
  }
  body {
      font-family: "Roboto", sans-serif;
  }
-
+.logo-blue {
+    color: var(--text-hover-logo)
+}
  .header-logo {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
     font-weight: 700;
      font-size: 26px;
      letter-spacing: 0.8px;
-     color: var(--text-hover-logo);
-      padding-top: 25px;
+     color: var(--text-main) ;
+     padding-top: 25px;
      padding-bottom: 25px;
  }
 .header-link {
