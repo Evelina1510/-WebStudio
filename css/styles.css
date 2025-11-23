@@ -200,6 +200,24 @@ button.hero-btn {
     color: var(--text-footer)
 }
 
+
+
+.portfolio-list {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 30px;
+}
+
+.portfolio-list-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 50px;
+    margin-top: 94px;
+}
+
 .portfolio-btn {
     line-height: 1.6;
     font-weight: 500;
@@ -207,7 +225,7 @@ button.hero-btn {
     letter-spacing: 0.48px;
    text-align: center;
    background-color: var(--team-bg);
-   color: var(--text-main)
+   color: var(--text-main) ;
 }
 .portfolio-title {
     line-height: 2;
@@ -222,4 +240,5 @@ button.hero-btn {
     font-size: 16px;
     letter-spacing: 0.48px;
     color: var(--text-p);
+    margin-bottom: 94px;
 }
