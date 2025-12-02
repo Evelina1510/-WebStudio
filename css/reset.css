@@ -13,3 +13,11 @@ p  {
 * {
     box-sizing: border-box;
 }
+
+.hero-title {
+    margin: 0 auto;
+}
+
+.portfolio-btn {
+    border: none;
+}

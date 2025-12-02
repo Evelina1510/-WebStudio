@@ -28,7 +28,7 @@
 .header .container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .header-list {
@@ -75,7 +75,9 @@
     width: 270px;
     height: 260px;
 }
-
+.header-link:hover {
+    color: var(--btn-bg) ;
+}
  .header-logo {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
@@ -110,12 +112,14 @@
     padding-top: 200px;
     padding-bottom: 280px;
 }
-.hero-title {
+.hero-title { 
+    width: 696px;
+    height: 120px;
     line-height: 1.4;
     font-weight: 900;
     font-size: 44px;
     letter-spacing: 2.64px;
-   text-align: center;
+   text-align: center ;
     text-transform: uppercase;
     color: var(--bg-header--text) ;
     margin-bottom: 30px;
@@ -129,7 +133,9 @@ button.hero-btn {
     text-transform: uppercase;
     background-color:var(--btn-bg);
     color: var(--bg-header--text);
-    
+    border-radius: 4px;
+    width: 216px;
+    height: 50px;
 }
 .details {
     padding-top: 94px;
@@ -186,7 +192,9 @@ button.hero-btn {
    text-align: center;
    color: var(--text-p);
 }
-
+.team-img {
+    margin-bottom: 30px;
+}
 .footer {
     background-color: var(--bg-footer);
     padding-top: 60px;
@@ -197,7 +205,12 @@ button.hero-btn {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.42px;
-    color: var(--text-footer)
+    color: var(--text-footer) ;
+    margin-bottom: 9px;
+}
+
+.footer-logo-wrap {
+    margin-bottom: 20px;
 }
 
 
@@ -207,6 +220,7 @@ button.hero-btn {
  flex-wrap: wrap;
  justify-content: center;
  gap: 30px;
+ padding-bottom: 94px;
 }
 
 .portfolio-img {
@@ -229,8 +243,11 @@ button.hero-btn {
     font-size: 16px;
     letter-spacing: 0.48px;
    text-align: center;
-   background-color: var(--team-bg);
+   background-color: var(--team-bg) ;
    color: var(--text-main) ;
+   width: 125px;
+   height: 38px;
+   border-radius: 4px;
 }
 .portfolio-title {
     line-height: 2;
@@ -246,4 +263,18 @@ button.hero-btn {
     letter-spacing: 0.48px;
     color: var(--text-p);
     margin-bottom: 94px;
+} 
+
+.portfolio-btn:hover {
+    border-radius: 4px;
+    background-color: var(--btn-bg) ;
+    color: var(--team-bg);
+
 }
+ .portfolio-title {
+    margin: 20px 24px 4px 24px;
+ }
+
+ .portfolio-category {
+    margin: 4px 24px 20px 24px;
+ }
