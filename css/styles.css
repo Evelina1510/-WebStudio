@@ -28,7 +28,7 @@
 .header .container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 .header-list {
@@ -209,6 +209,11 @@ button.hero-btn {
  gap: 30px;
 }
 
+.portfolio-img {
+    border: 1px solid grey;
+    width: 370px;
+    height: 404px;
+}
 .portfolio-list-btn {
     display: flex;
     flex-wrap: wrap;
