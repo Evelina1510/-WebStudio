@@ -223,11 +223,17 @@ button.hero-btn {
  padding-bottom: 94px;
 }
 
-.portfolio-img {
-    border: 1px solid grey;
+.portfolio-ltem {
+     border: 1px solid grey;
     width: 370px;
     height: 404px;
+
 }
+ .portfolio-lmg {
+    width: 370px;
+    height: 294px;
+ }
+
 .portfolio-list-btn {
     display: flex;
     flex-wrap: wrap;
