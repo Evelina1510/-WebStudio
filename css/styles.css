@@ -148,6 +148,33 @@ button.hero-btn {
     color: var(--text-main);
     
 }
+
+.details-subtitle::before {
+    content: "";
+    display: inline-block;
+    background-color: #F5F4FA;
+    width: 250px;
+    height: 120px;
+    background-image: url("../img/Group.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    margin-bottom: 30px;
+}
+
+.details-item:nth-child(2) .details-subtitle::before {
+   background-image: url("../img/clock.png");
+}
+
+.details-item:nth-child(3) .details-subtitle::before {
+   background-image: url("../img/diagram.png");
+}
+
+.details-item:nth-child(4) .details-subtitle::before {
+   background-image: url("../img/astronaut.png");
+}
+
+
 .details-text {
     line-height: 1.7;
     font-weight: 400;
@@ -284,3 +311,5 @@ button.hero-btn {
  .portfolio-category {
     margin: 4px 24px 20px 24px;
  }
+
+ 
