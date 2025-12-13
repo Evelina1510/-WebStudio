@@ -250,17 +250,18 @@ button.hero-btn {
  padding-bottom: 94px;
 }
 
-.portfolio-ltem {
+.portfolio-item {
      border: 1px solid grey;
     width: 370px;
     height: 404px;
-
 }
- .portfolio-lmg {
+
+ .portfolio-img {
     width: 370px;
     height: 294px;
+    padding-right: 8px;
  }
-
+ 
 .portfolio-list-btn {
     display: flex;
     flex-wrap: wrap;
