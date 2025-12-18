@@ -41,6 +41,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
 }
 
 .details-list {
@@ -111,6 +112,8 @@
     background-color: var(--bg-hero);
     padding-top: 200px;
     padding-bottom: 280px;
+    background-image: linear-gradient(#2f303a66, #2f303a66),  url("../img/work.jpg");;
+
 }
 .hero-title { 
     width: 696px;
@@ -136,6 +139,8 @@ button.hero-btn {
     border-radius: 4px;
     width: 216px;
     height: 50px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
 }
 .details {
     padding-top: 94px;
