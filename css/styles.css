@@ -70,7 +70,6 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    margin-bottom: 94px;
 }
 .team-img {
     width: 270px;
@@ -113,6 +112,8 @@
     padding-top: 200px;
     padding-bottom: 280px;
     background-image: linear-gradient(#2f303a66, #2f303a66),  url("../img/work.jpg");;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .hero-title { 
@@ -136,7 +137,6 @@ button.hero-btn {
     text-transform: uppercase;
     background-color:var(--btn-bg);
     color: var(--bg-header--text);
-    border-radius: 4px;
     width: 216px;
     height: 50px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -201,7 +201,7 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .team {
     background-color: var(--team-bg);
-    padding-top: 186px;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -209,7 +209,7 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
  width: 270.0px;
 height: 368.0px;
 border-radius: 0 0 4px 4px;
-background: #FFF;
+background: var(--text-footer);
 box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
 }
 
@@ -240,7 +240,7 @@ box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 
 .footer {
     background-color: var(--bg-footer);
     padding-top: 60px;
-    padding-bottom: 161px;
+    padding-bottom: 60px;
 }
 .footer-item { 
     line-height: 1.7;
@@ -268,15 +268,17 @@ box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 
 .portfolio-item {
  width: 370px;
  height: 404px;
-border: 1px solid #EEE;
-background: #FFF;
+}
+
+.portfolio-item:hover {
+    border: 1px solid var(--bg-header--text);
+background: var(--bg-header--text);
 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
  .portfolio-img {
     width: 370px;
     height: 294px;
-    padding-right: 8px;
  }
  
 .portfolio-list-btn {
@@ -296,8 +298,7 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1p
    text-align: center;
    background-color: var(--team-bg);
    color: var(--text-main);
-   width: 125px;
-   height: 38px;
+   padding: 6px 24px;
    border-radius: 4px;
 }
 .portfolio-title {
