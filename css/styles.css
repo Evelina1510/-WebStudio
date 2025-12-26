@@ -29,6 +29,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
+}
+
+.header {
+     border: solid 1px  var(--text-p);
 }
 
 .header-list {
@@ -137,9 +142,9 @@ button.hero-btn {
     text-transform: uppercase;
     background-color:var(--btn-bg);
     color: var(--bg-header--text);
-    width: 216px;
-    height: 50px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+border: none;
+padding: 10px 32px;
 
 }
 .details {
@@ -226,6 +231,7 @@ box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 
     letter-spacing: 0.48px;
     text-align: center;
     color: var(--text-main);
+    margin-bottom: 10px;
 }
 .team-role {
     font-weight: 400;
@@ -251,6 +257,10 @@ box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 
     margin-bottom: 9px;
 }
 
+.footer-link {
+    color: var(--text-p);
+}
+
 .footer-logo-wrap {
     margin-bottom: 20px;
 }
@@ -268,10 +278,10 @@ box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 
 .portfolio-item {
  width: 370px;
  height: 404px;
+ outline: 1px  var(--text-p);
 }
 
 .portfolio-item:hover {
-    border: 1px solid var(--bg-header--text);
 background: var(--bg-header--text);
 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
