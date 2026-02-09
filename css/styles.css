@@ -32,6 +32,12 @@
    
 }
 
+.header-icons {
+    width: 16px;
+    height: 12px;
+}
+
+
 .header {
      border: solid 1px  var(--text-p);
 }
@@ -210,9 +216,14 @@ padding: 10px 32px;
     padding-bottom: 94px;
 }
 
+.team-icons {
+    width: 20px;
+    height: 20px;
+}
+
 .team-item {
  width: 270.0px;
-height: 368.0px;
+height: 428.0px;
 border-radius: 0 0 4px 4px;
 background: var(--text-footer);
 box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
