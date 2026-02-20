@@ -222,7 +222,30 @@ button.hero-btn {
   padding-bottom: 94px;
 }
 
+.srv-text{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white
+}
 
+.srv-item {
+  position: relative;
+}
 .srv-subtitle {
   font-weight: 700;
   font-size: 36px;
