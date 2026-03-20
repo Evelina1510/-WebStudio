@@ -68,7 +68,22 @@
         <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <div class="hero-btn">
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button data-modal-open class="backdrop is-hidden" class="hero-btn" type="button">Замовити послугу</button>
+          <div class="modal" data-modal>
+            <button data-modal-close class="modalclose">X</button>
+            <p>Залиште свої дані, ми вам передзвонимо</p>
+            <form action="">
+              <label for="">
+                <input type="text" placeholder="Имя">
+              </label>
+              <label for="">
+                <input type="tel" placeholder="Телефон">
+              </label>
+               <label for="">
+                <input type="email" placeholder="Пошта">
+              </label>
+            </form>
+          </div>
         </div>
       </div>
       </section>
@@ -328,9 +343,16 @@
             </svg>
           </div>
           </div>
-          
         </div>
+          <div class="footer-form">
+            <p class="footer-form-title">Підпишіться на розсилку</p>
+           <div class="join-footer">
+              <input type="email" class="join-email" placeholder="E-mail">
+              <button class="join-button">Підписатися</button> 
+          </div>
+        
     </div>
     </footer>
+     <script src="./js/modal.js"></script>
   </body>
 </html>
