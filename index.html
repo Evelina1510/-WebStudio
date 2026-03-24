@@ -68,21 +68,59 @@
         <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <div class="hero-btn">
-          <button data-modal-open class="backdrop is-hidden" class="hero-btn" type="button">Замовити послугу</button>
-          <div class="modal" data-modal>
-            <button data-modal-close class="modalclose">X</button>
-            <p>Залиште свої дані, ми вам передзвонимо</p>
-            <form action="">
-              <label for="">
-                <input type="text" placeholder="Имя">
+          <button  class="btn" data-modal-open type="button">Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+            <button class="modal-close" data-modal-close >X</button>
+            <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+            <form action="form">
+              <label for="form-label">
+                <p class="form-input-text">Имя</p>
+                <div class="input-wrap">
+                <input class="form-input" type="text" placeholder="">
+                <svg class="form-svg" width="18" height="18">
+                <use href="./img/symbol-defsmodal.svg#icon-name"></use>
+              </svg>
+            </div>
               </label>
-              <label for="">
-                <input type="tel" placeholder="Телефон">
+
+              <label for="form-label">
+                <p class="form-input-text">Телефон</p>
+               <div class="input-wrap">
+                <input class="form-input" type="tel" placeholder="">
+                <svg class="form-svg" width="18" height="18">
+                <use href="./img/symbol-defsmodal.svg#icon-number"></use>
+              </svg>
+              </div>
               </label>
-               <label for="">
-                <input type="email" placeholder="Пошта">
+            
+
+               <label for="form-label">
+                <div class="input-wrap">
+                <p class="form-input-text">Пошта</p>
+                <input class="form-input" type="email" placeholder="">
+                <svg class="form-svg" width="18" height="18">
+                <use href="./img/symbol-defsmodal.svg#icon-email2"></use>
+              </svg>
+            </div>
               </label>
+            
+
+               <label for="form-label">
+                <p class="form-input-text">Коментар</p>
+                <input class="form-textarea" placeholder="Введіть текст">
+               </label>
+                
+
+               <label class="form-checkbox">
+                <input type="checkbox"> Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a>
+               </label>
+
+               <button type="submit" class="btn">
+               Відправити
+               </button>
             </form>
+          </div>
           </div>
         </div>
       </div>
@@ -348,7 +386,7 @@
             <p class="footer-form-title">Підпишіться на розсилку</p>
            <div class="join-footer">
               <input type="email" class="join-email" placeholder="E-mail">
-              <button class="join-button">Підписатися</button> 
+              <button class="join-button">Підписатися<svg class="footer-form-svg"><use href="./img/symbol-defsmodal.svg#icon-telegramicon"></use></svg></button> 
           </div>
         
     </div>

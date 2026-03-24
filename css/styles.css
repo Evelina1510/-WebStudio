@@ -29,7 +29,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
+/* хедер */
 .header {
   border-bottom: 1px solid #d9d9d9;
 }
@@ -51,37 +51,6 @@ body {
   border-radius: 4px;
 }
 
-.details-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.details-subtitle {
-  margin-bottom: 10px;
-}
-
-.srv-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-.srv-subtitle {
-  margin-bottom: 50px;
-}
-
-.team-title {
-  margin-bottom: 50px;
-}
-.team-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-.team-img {
-  width: 270px;
-  height: 260px;
-}
 
 .header-link:hover {
   color: var(--text-hover-logo);
@@ -125,18 +94,7 @@ body {
   letter-spacing: 0.28px;
   color: var(--text-main);
 }
-.footer-logo {
-  font-family: "Raleway", sans-serif;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.8px;
-  color: var(--text-hover-logo);
-}
-.footer-link {
-  text-decoration: none;
-  color: var(--text-footer);
-}
+
 .hero {
   background-color: var(--bg-hero);
   padding-top: 200px;
@@ -158,7 +116,7 @@ body {
   color: var(--bg-header--text);
   margin-bottom: 30px;
 }
-button.hero-btn {
+button.btn {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -173,11 +131,154 @@ button.hero-btn {
   padding: 10px 32px;
 }
 
+/* модальне вікно */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
 
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  max-width: 528px;
+  max-height: 581px;
+  padding: 40px 40px;
+  background-color: var(--bg-header--text);
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  box-shadow:
+    0 2px 1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-close:hover {
+  color: var(--btn-bg);
+}
+
+.modal-text {
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  padding-bottom: 12px;
+}
+
+
+
+/* форма */
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-input-text {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  margin-bottom: 4px;
+}
+
+.form-input {
+  padding-left: 40px;
+}
+.form-svg {
+  position: absolute;
+  left: 12px;
+  transform: translateY(50%);
+}
+
+.btn {
+  display: block;
+  margin: 30px auto 40px;
+}
+
+.form-input,
+.form-textarea {
+  width: 448px;
+  height: 40px;
+  padding: 11px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.form-input:focus {
+  border: 1px solid var(--btn-bg);
+  outline: none;
+}
+
+.form-textarea:focus {
+  border: 1px solid var(--btn-bg);
+  outline: none;
+}
+
+.input-wrap:focus-within .form-svg {
+  fill: var(--btn-bg);
+}
+
+.form-textarea {
+  height: 120px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-checkbox {
+  color: var(--text-p);
+}
+
+.form-checkbox a {
+  color: var(--btn-bg);
+}
+
+/* увага до деталей */
 
 .details {
   padding-top: 94px;
 }
+.details-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.details-subtitle {
+  margin-bottom: 10px;
+}
+
 .details-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -219,9 +320,20 @@ button.hero-btn {
   letter-spacing: 0.42px;
   color: var(--text-p);
 }
+
+/* чим ми займаємось */
 .srv {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.srv-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.srv-subtitle {
+  margin-bottom: 50px;
 }
 
 .srv-text {
@@ -255,12 +367,26 @@ button.hero-btn {
   text-align: center;
   color: var(--text-main);
 }
+
+/* команда */
 .team {
   background-color: var(--team-bg);
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+.team-title {
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.team-img {
+  width: 270px;
+  height: 260px;
+}
 .team-icons-svg {
   width: 20px;
   height: 20px;
@@ -365,6 +491,8 @@ button.hero-btn {
 .team-img {
   margin-bottom: 30px;
 }
+
+/* футер */
 .footer {
   background-color: var(--bg-footer);
   padding-top: 60px;
@@ -379,6 +507,19 @@ button.hero-btn {
   margin-bottom: 9px;
 }
 
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.8px;
+  color: var(--text-hover-logo);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--text-footer);
+}
 .footer-link {
   color: var(--text-p);
 }
@@ -422,7 +563,6 @@ button.hero-btn {
   letter-spacing: 0.42px;
 }
 
-
 .footer-form-title {
   font-family: "Roboto";
   font-weight: 700;
@@ -432,6 +572,12 @@ button.hero-btn {
   text-transform: uppercase;
   color: white;
   margin-bottom: 20px;
+}
+
+.join-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .join-email {
@@ -447,6 +593,8 @@ button.hero-btn {
 }
 
 .join-button {
+  display: flex;
+  align-items: center;
   background-color: var(--btn-bg);
   font-family: "Roboto";
   font-weight: 700;
@@ -459,6 +607,13 @@ button.hero-btn {
   color: white;
   padding: 10px 28px 10px 28px;
   border: none;
+}
+
+.footer-form-svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--bg-header--text);
+  margin-left: 10px;
 }
 
 .footer .container {
