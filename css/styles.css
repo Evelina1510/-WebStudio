@@ -56,12 +56,14 @@ body {
 }
 
 .header-contact {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--text-p);
   text-decoration: none;
 }
 
 .header-icon {
   fill: var(--text-p);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact:hover {
@@ -87,18 +89,21 @@ body {
   padding-bottom: 25px;
 }
 .header-link {
+  position: relative;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
   color: var(--text-main);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-active {
   position: relative;
 }
 
-.header-link-active::after {
+
+.header-link::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -107,7 +112,15 @@ body {
   background-color: var(--btn-bg);
   left: 0;
   position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.header-link:hover::after {
+  transform: scaleX(1);
+  
+} 
 
 .hero {
   background-color: var(--bg-hero);
@@ -438,6 +451,8 @@ button.btn {
   fill: #afb1b8;
   width: 170px;
   height: 92px;
+   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list {
@@ -465,6 +480,14 @@ button.btn {
   letter-spacing: 3%;
   padding-bottom: 50px;
   text-align: center;
+}
+
+.team-social {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item {
@@ -564,6 +587,7 @@ button.btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-title {
@@ -715,6 +739,7 @@ button.btn {
   color: var(--text-main);
   padding: 6px 24px;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-title {
   line-height: 2;
