@@ -21,3 +21,7 @@ p  {
 .portfolio-btn {
     border: none;
 }
+
+img {
+    display: block;
+}
