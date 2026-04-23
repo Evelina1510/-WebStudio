@@ -24,6 +24,10 @@ body {
   color: var(--text-footer);
 }
 
+.logo {
+  animation: fadeInUp 1s ease;
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -455,6 +459,10 @@ button.btn {
 .clients-icon {
   width: 106px;
   height: 60px;
+}
+
+.clients-icon:hover {
+  animation: heartBeat 1s linear;
 }
 
 .clients-item {
